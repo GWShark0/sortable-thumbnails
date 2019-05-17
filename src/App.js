@@ -32,7 +32,7 @@ const SortableItem = SortableElement(props => {
         alt=""
       />
       <span className="grid-item__handle" />
-      <span className="grid-item__index" onClick={onRemove}>
+      <span className="grid-item__index" onClick={() => onRemove(index)}>
         {index + 1}
       </span>
     </div>
