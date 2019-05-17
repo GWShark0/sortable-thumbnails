@@ -11,8 +11,12 @@
 .grid--dragging {
   cursor: grabbing;
 
-  .grid-item__index {
-    opacity: 0;
+  .grid-item:not(.grid-item--helper) {
+    pointer-events: none;
+
+    .grid-item__index {
+      opacity: 0;
+    }
   }
 }
 
